@@ -1,3 +1,4 @@
+
 package dto;
 
 import java.util.List;
@@ -7,15 +8,13 @@ public class Subject {
     private Teacher teacher;
     private List<Student> studentList;
 
+    public Subject() {
+    }
+
     public Subject(String name, Teacher teacher, List<Student> studentList) {
         this.name = name;
         this.teacher = teacher;
         this.studentList = studentList;
-    }
-    public void printsubjectProperties(){
-        System.out.println("Subject Name: " + name);
-        System.out.println("Teacher's Name: " + teacher);
-        System.out.println("Student's list: " + studentList);
     }
 
     public String getName() {
